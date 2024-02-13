@@ -1,0 +1,16 @@
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS pasiens;
+
+
+CREATE TABLE pasiens (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    nama_pasien TEXT NOT NULL,
+    jenis_kelamin TEXT NOT NULL,
+    hb FLOAT NOT NULL,
+    mch FLOAT NOT NULL,
+    mchc FLOAT NOT NULL,
+    mcv FLOAT NOT NULL,
+    status  TEXT NOT NULL
+    
+);
