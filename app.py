@@ -27,7 +27,7 @@ def is_anemic(hb, jk):
   return status
 
 app = Flask(__name__)
-
+app.secret_key ='amar'
 
 # data admin login
 users = {    'admin': 'admin',  }  

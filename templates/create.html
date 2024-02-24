@@ -137,6 +137,19 @@
         <div class="container-lg">
           <!-- /.row-->
           <div class="row">
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-header">INFORMASI</div>
+                <div class="card-body">
+                  Selamat datang di halaman tambah data pasien. Kami ingin
+                  memastikan informasi yang Anda berikan tercatat dengan
+                  sempurna. Silakan lengkapi kolom-kolom berikut dengan cermat
+                  untuk memastikan rekam medis pasien terperinci: Nama Pasien,
+                  Jenis Kelamin, Hemoglobin, MCH, MCHC, dan MCV. Terima kasih
+                  atas kerjasama Anda dalam memberikan perawatan yang optimal.
+                </div>
+              </div>
+            </div>
             <div class="col-md-12">
               <div class="card mb-4">
                 <div class="card-header">
@@ -184,7 +197,11 @@
                         name="hb"
                         placeholder="masukan nilai hemoglobin"
                       />
+                      <span id="range-hemoglobin" class="form-text">
+                        Laki-laki : 13-17 g/dL Perempuan : 12-15 g/dL
+                      </span>
                     </div>
+
                     <div class="col-3">
                       <label for="mch" class="form-label">MCH</label>
                       <input
@@ -195,6 +212,9 @@
                         name="mch"
                         placeholder="masukan nilai mch"
                       />
+                      <span id="range-hemoglobin" class="form-text">
+                        range mch:27-31 pg
+                      </span>
                     </div>
                     <div class="col-3">
                       <label for="mchc" class="form-label">MCHC</label>
@@ -206,6 +226,10 @@
                         value="{{ request.form['mchc'] }}"
                         placeholder="masukan nilai mchc"
                       />
+
+                      <span id="range-hemoglobin" class="form-text">
+                        range mchc: 30-55 gr/dL
+                      </span>
                     </div>
                     <div class="col-3">
                       <label for="mcv" class="form-label">MCV</label>
@@ -217,6 +241,9 @@
                         name="mcv"
                         placeholder="masukan nilai mcv"
                       />
+                      <span id="range-hemoglobin" class="form-text">
+                        range mvc: 82-92 fl
+                      </span>
                     </div>
 
                     <div class="col-12">
